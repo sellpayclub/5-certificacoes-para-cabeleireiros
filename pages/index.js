@@ -93,9 +93,9 @@ export default function Home() {
 
       <main>
         <Hero />
-        <ValueSection />
         <Certifications />
         <StudyMaterial />
+        <ValueSection />
         <SocialProof />
 
         <Offers />

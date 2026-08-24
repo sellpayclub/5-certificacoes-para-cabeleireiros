@@ -22,7 +22,9 @@ export default function Hero() {
           </span>
 
           <h1>
-            5 Certificações Profissionais Completas para Cabeleireiros
+            Combo Cabeleireiro Profissional
+            <br />
+            5 em 1.
           </h1>
 
           <p className="hero-lead">
@@ -53,8 +55,8 @@ export default function Hero() {
         <div className="hero-visual">
           <img
             className="hero-mockups-image"
-            src="https://osnxfompwlwlfkuvncgs.supabase.co/storage/v1/object/public/project-assets/3464e6e8-17aa-481a-a30b-c7fdbac62d82/uploads/d2f3ed2c-9e54-4c67-a868-c5231030d4b5.jpg"
-            alt="Cinco certificados profissionais de cabeleireiro"
+            src="https://osnxfompwlwlfkuvncgs.supabase.co/storage/v1/object/public/project-assets/3464e6e8-17aa-481a-a30b-c7fdbac62d82/uploads/cb3fde29-f925-4351-b9cd-9939ef56b8f5.jpg"
+            alt="Combo com cinco apostilas profissionais para cabeleireiros"
             referrerPolicy="no-referrer"
           />
         </div>

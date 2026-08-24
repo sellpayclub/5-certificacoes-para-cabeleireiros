@@ -2395,6 +2395,38 @@ section {
     text-align: center;
   }
 
+  .section-heading,
+  .certifications-heading,
+  .why-heading {
+    text-align: center;
+  }
+
+  .section-heading .section-kicker,
+  .why-heading .section-kicker {
+    justify-content: center;
+  }
+
+  .why-heading h2 {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .material-heading {
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+  }
+
+  .material-heading .section-kicker {
+    justify-content: center;
+  }
+
+  .material-heading h2 {
+    max-width: 420px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
   .material-copy {
     text-align: center;
   }

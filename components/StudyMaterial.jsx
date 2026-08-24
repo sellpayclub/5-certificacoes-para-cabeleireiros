@@ -1,13 +1,12 @@
 import { BookOpen, Check, FileText } from "lucide-react";
 
 const contents = [
-  "Conteúdo organizado do básico ao profissional",
-  "Explicações simples e objetivas",
-  "Técnicas passo a passo",
-  "Cuidados importantes",
-  "Erros mais comuns",
-  "Dicas profissionais",
-  "Orientações para diferentes tipos de cabelo",
+  "Certificado profissional em seu nome",
+  "Certificado de conclusão para cada especialização",
+  "Reconhecimento da sua capacitação profissional",
+  "Comprovação das formações concluídas",
+  "Certificados prontos para imprimir",
+  "Mais profissionalismo para apresentar às suas clientes",
 ];
 
 export default function StudyMaterial() {
@@ -16,19 +15,15 @@ export default function StudyMaterial() {
       <div className="container">
         <div className="section-heading material-heading">
           <span className="section-kicker">Material para acompanhar sua evolução</span>
-          <h2>NÃO É APENAS UM CERTIFICADO.</h2>
-          <h3>
-            Você também recebe uma apostila completa para estudar e aperfeiçoar
-            sua técnica.
-          </h3>
+          <h2>ALÉM DAS APOSTILAS, VOCÊ RECERÁ CERTIFICADOS RECONHECIDOS EM SEU NOME</h2>
         </div>
 
         <div className="material-grid">
           <div className="books-placeholder">
             <img
               className="books-image"
-              src="https://osnxfompwlwlfkuvncgs.supabase.co/storage/v1/object/public/project-assets/3464e6e8-17aa-481a-a30b-c7fdbac62d82/uploads/74a66f8b-8fe6-486f-8422-170473112333.jpg"
-              alt="Coleção de cinco apostilas profissionais para cabeleireiros"
+              src="https://osnxfompwlwlfkuvncgs.supabase.co/storage/v1/object/public/project-assets/3464e6e8-17aa-481a-a30b-c7fdbac62d82/uploads/d2f3ed2c-9e54-4c67-a868-c5231030d4b5.jpg"
+              alt="Cinco certificados profissionais de cabeleireiro"
               loading="lazy"
               decoding="async"
               referrerPolicy="no-referrer"
@@ -37,13 +32,11 @@ export default function StudyMaterial() {
 
           <div className="material-copy">
             <p>
-              Cada especialização acompanha uma{" "}
-              <strong>apostila profissional completa</strong>, desenvolvida
-              para que você possa aprender no seu ritmo e consultar sempre que
-              precisar.
+              Cada especialização acompanha um{" "}
+              <strong>Certificado profissional em seu Nome!</strong>
             </p>
 
-            <h3>Dentro do seu material você encontra:</h3>
+            <h3>Com o seu certificado você recebe:</h3>
 
             <ul>
               {contents.map((content) => (
