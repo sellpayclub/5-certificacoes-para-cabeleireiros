@@ -241,8 +241,8 @@ export default function GastronomyLanding() {
 
             <div className="gastronomy-receive-image">
               <img
-                src="https://osnxfompwlwlfkuvncgs.supabase.co/storage/v1/object/public/project-assets/3464e6e8-17aa-481a-a30b-c7fdbac62d82/uploads/415619a8-2df2-4cf1-99a3-676388aa8c92.jpg"
-                alt="Pessoa preparando uma receita em uma cozinha"
+                src="https://osnxfompwlwlfkuvncgs.supabase.co/storage/v1/object/public/project-assets/3464e6e8-17aa-481a-a30b-c7fdbac62d82/uploads/1cad04cd-4d53-49ea-85eb-174089dd7f54.jpg"
+                alt="Certificados e apostilas das formações em Gastronomia"
                 loading="lazy"
                 decoding="async"
                 referrerPolicy="no-referrer"
