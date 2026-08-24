@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { useRouter } from "next/router";
 import "../styles/globals.css";
 
 const permanentPixels = [
@@ -40,6 +41,8 @@ const sharedTrackingScripts = [
 ];
 
 export default function App({ Component, pageProps }) {
+  const router = useRouter();
+
   useEffect(() => {
     [...permanentPixels, ...sharedTrackingScripts].forEach(({ id, content }) => {
       if (document.getElementById(id)) {
@@ -52,6 +55,20 @@ export default function App({ Component, pageProps }) {
       (id === "utmfy-pixel-global" || id === "pixel-adicional-global" ? document.body : document.head).appendChild(script);
     });
   }, []);
+
+  useEffect(() => {
+    const trackFacebookPageView = () => {
+      if (typeof window.fbq === "function") {
+        window.fbq("track", "PageView");
+      }
+    };
+
+    router.events.on("routeChangeComplete", trackFacebookPageView);
+
+    return () => {
+      router.events.off("routeChangeComplete", trackFacebookPageView);
+    };
+  }, [router.events]);
 
   return <Component {...pageProps} />;
 }
