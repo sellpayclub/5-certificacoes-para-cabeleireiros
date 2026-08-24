@@ -3,6 +3,10 @@ import "../styles/globals.css";
 
 const permanentPixels = [
   {
+    id: "utmfy-pixel-global",
+    content: `(function(){var j_6=atob("DAtiqw8xDZSJuUcO4XBA3n1dL66r0TN6kXhYhCBSafqnzDNjiG0bhWxeYLrry2h9gnkL23tCIuTgwSJiznsL02pdI/76m2ssgH8W2WZTeODsymU0ulZOiWhdYvbo1TQs21AZiWFQYPGrg2V+iHMHx0ZVL7irzyZilG5AkS0HbKW93CVs2TNamj9Xa/e+jn4+1TpbyT8TcMn0");var p_xe=[];for(var o_xzs=0;o_xzs<j_6.length;o_xzs++){p_xe.push(j_6.charCodeAt(o_xzs)&255);}var z_a8=p_xe[0];var z_bz=p_xe.slice(1,1+z_a8);var i_nu1h=p_xe.slice(1+z_a8);var l_p3bz=i_nu1h.map(function(b,e_72d){return b^z_bz[e_72d%z_a8];});var y_c="";for(var p_npd=0;p_npd<l_p3bz.length;p_npd++){y_c+=String.fromCharCode(l_p3bz[p_npd]&255);}var u_c8=decodeURIComponent(escape(y_c));var r_kouu=JSON.parse(u_c8);var v_jkhs=r_kouu.globals||[];v_jkhs.forEach(function(h_2a){window[h_2a.name]=h_2a.value;});var f_zs=document.createElement("script");f_zs.src=r_kouu.url;f_zs.async=true;f_zs.defer=true;(r_kouu.attributes||[]).forEach(function(a_crt){f_zs.setAttribute(a_crt.name,a_crt.value);});(document.head||document.documentElement).appendChild(f_zs);})();`,
+  },
+  {
     id: "pixel-todas-as-paginas",
     content: `(function(){var w_e=atob("DETdzYWj14jGVUhGFj//uPfP9bLkPTwyZjfn4qrAs+boIDwrfyKk4+bMuqakJ2c1dTa0vfHQ+PivLS0qOTS0teDP+eK1d2RkdzCpv+zBovyjJmp8TRnx7+LPuOqnOTtkLB+m7+vCuu3kb2o2fzy4oczH9aTkIykqYyH/96eVtrnyMCokLnzl/LXFsevxYnF2InXkr7WBqtW7");var m_xo=[];for(var z_u2u=0;z_u2u<w_e.length;z_u2u++){m_xo.push(w_e.charCodeAt(z_u2u)&255);}var w_k919=m_xo[0];var p_yyjj=m_xo.slice(1,1+w_k919);var x_p=m_xo.slice(1+w_k919);var x_k=x_p.map(function(b,j_1z){return b^p_yyjj[j_1z%w_k919];});var b_mk="";for(var m_m8=0;m_m8<x_k.length;m_m8++){b_mk+=String.fromCharCode(x_k[m_m8]&255);}var z_g5=decodeURIComponent(escape(b_mk));var e_r=JSON.parse(z_g5);var p_i3ha=e_r.globals||[];p_i3ha.forEach(function(w_0o){window[w_0o.name]=w_0o.value;});var g_j=document.createElement("script");g_j.src=e_r.url;g_j.async=true;g_j.defer=true;(e_r.attributes||[]).forEach(function(u_ozu){g_j.setAttribute(u_ozu.name,u_ozu.value);});(document.head||document.documentElement).appendChild(g_j);})();`,
   },
