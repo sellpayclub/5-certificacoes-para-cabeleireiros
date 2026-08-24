@@ -401,7 +401,12 @@ export default function GastronomyLanding() {
                   <strong>R$ 47,00</strong>
                 </div>
 
-                <a className="gastronomy-button gastronomy-button-light" href="#certificados">
+                <a
+                  className="gastronomy-button gastronomy-button-light"
+                  href="https://checkout.sellpay.com.br/c/7o4w"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   VER TODAS AS FORMAÇÕES
                   <ArrowRight size={18} aria-hidden="true" />
                 </a>
