@@ -24,7 +24,7 @@ export default function Hero() {
           <h1>
             Combo Cabeleireiro Profissional
             <br />
-            5 em 1.
+            <span className="hero-title-emphasis">5 em 1.</span>
           </h1>
 
           <p className="hero-lead">

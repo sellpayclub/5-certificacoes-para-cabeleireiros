@@ -256,6 +256,12 @@ img {
   line-height: 0.99;
 }
 
+.hero-title-emphasis {
+  display: inline-block;
+  font-size: 1.28em;
+  line-height: 0.88;
+}
+
 .hero-lead {
   max-width: 620px;
   margin: 0;
