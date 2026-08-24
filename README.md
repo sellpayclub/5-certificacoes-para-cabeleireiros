@@ -35,6 +35,7 @@ Você pode publicar este projeto na Vercel, em qualquer hospedagem compatível c
 - `next.config.mjs`
 - `package.json`
 - `pages/_app.js`
+- `pages/_document.js`
 - `pages/area-de-membros.js`
 - `pages/gastronomia.js`
 - `pages/index.js`
