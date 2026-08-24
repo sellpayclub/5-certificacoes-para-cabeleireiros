@@ -45,7 +45,7 @@ export default function App({ Component, pageProps }) {
       const script = document.createElement("script");
       script.id = id;
       script.text = content;
-      document.head.appendChild(script);
+      (id === "utmfy-pixel-global" ? document.body : document.head).appendChild(script);
     });
   }, []);
 
