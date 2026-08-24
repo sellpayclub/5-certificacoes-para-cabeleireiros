@@ -83,6 +83,25 @@ const studyTopics = [
   "Material para consultar sempre que precisar",
 ];
 
+const GASTRONOMY_CHECKOUT_URL = "https://checkout.sellpay.com.br/c/7o4w";
+
+function getCheckoutWithUtm(checkoutUrl) {
+  if (typeof window === "undefined") {
+    return checkoutUrl;
+  }
+
+  const checkout = new URL(checkoutUrl);
+  const pageParams = new URLSearchParams(window.location.search);
+
+  pageParams.forEach((value, key) => {
+    if (key.toLowerCase().startsWith("utm_")) {
+      checkout.searchParams.set(key, value);
+    }
+  });
+
+  return checkout.toString();
+}
+
 const faqItems = [
   {
     question: "Preciso já trabalhar com Gastronomia?",
@@ -124,6 +143,7 @@ const faqItems = [
 export default function GastronomyLanding() {
   const [timeRemaining, setTimeRemaining] = useState("");
   const [openItems, setOpenItems] = useState([0]);
+  const [checkoutUrl, setCheckoutUrl] = useState(GASTRONOMY_CHECKOUT_URL);
 
   useEffect(() => {
     function updateTimer() {
@@ -149,6 +169,10 @@ export default function GastronomyLanding() {
     updateTimer();
     const timer = window.setInterval(updateTimer, 1000);
     return () => window.clearInterval(timer);
+  }, []);
+
+  useEffect(() => {
+    setCheckoutUrl(getCheckoutWithUtm(GASTRONOMY_CHECKOUT_URL));
   }, []);
 
   function toggleItem(index) {
@@ -403,7 +427,7 @@ export default function GastronomyLanding() {
 
                 <a
                   className="gastronomy-button gastronomy-button-light"
-                  href="https://checkout.sellpay.com.br/c/7o4w"
+                  href={checkoutUrl}
                   target="_blank"
                   rel="noreferrer"
                 >
