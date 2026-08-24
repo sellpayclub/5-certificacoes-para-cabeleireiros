@@ -90,7 +90,6 @@ export default function Offers() {
       <div className="container">
         <div className="section-heading centered-heading offers-heading">
           <span className="section-kicker">Comece agora</span>
-          <h2>ESCOLHA SUA CERTIFICAÇÃO:</h2>
         </div>
 
         <div className="offers-grid offers-grid-single">
@@ -119,7 +118,7 @@ export default function Offers() {
             <BenefitList items={completeBenefits} />
 
               <div className="featured-price">
-                <span>De R$200,00 por R$47,00!</span>
+                                  <span>De R$249,50 por R$47,00!</span>
                 <div className="featured-price-value">
                   <small>FORMAÇÃO COMPLETA</small>
                   <strong>R$ 47,00</strong>

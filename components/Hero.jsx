@@ -47,7 +47,7 @@ export default function Hero() {
           </div>
 
           <a className="button button-primary button-large" href="/#planos">
-            QUERO MEU CERTIFICADO
+            DE R$ 249,50 POR R$ 47,00 HOJE!
             <ArrowRight size={19} aria-hidden="true" />
           </a>
         </div>
