@@ -1,4 +1,4 @@
-import { Scissors } from "lucide-react";
+import { Award } from "lucide-react";
 
 const links = [
   { label: "Certificações", href: "#certificacoes" },
@@ -12,12 +12,13 @@ export default function Header() {
     <header className="site-header">
       <div className="container header-inner">
         <a className="brand" href="/" aria-label="Ir para o início">
-          <span className="brand-icon" aria-hidden="true">
-            <Scissors size={19} strokeWidth={1.8} />
+          <span className="academy-logo" aria-hidden="true">
+            <Award size={16} strokeWidth={1.9} />
+            <b>IBC</b>
           </span>
-          <span>
-            <strong>5 Certificações</strong>
-            <small>para Cabeleireiros</small>
+          <span className="academy-brand-copy">
+            <strong>Instituto Beleza</strong>
+            <small>Certificada</small>
           </span>
         </a>
 

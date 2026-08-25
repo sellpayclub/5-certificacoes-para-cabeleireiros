@@ -28,8 +28,7 @@ export default function Hero() {
           </h1>
 
           <p className="hero-lead">
-            Aprenda novas técnicas, aperfeiçoe seus serviços e receba um{" "}
-            <strong>certificado reconhecido</strong>
+            Receba 5 apostilas completas + 5 certificados no seu nome por Apenas R$ 10,00 CADA.
           </p>
 
           <div className="hero-benefits">
