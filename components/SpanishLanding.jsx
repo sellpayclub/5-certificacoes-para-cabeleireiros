@@ -1,7 +1,17 @@
 import { useEffect, useState } from "react";
-import { ArrowRight, Award, Check, Scissors, Sparkles } from "lucide-react";
+import {
+  ArrowRight,
+  Award,
+  Check,
+  CreditCard,
+  Landmark,
+  Scissors,
+  Sparkles,
+  X,
+} from "lucide-react";
 
-const CHECKOUT_COMPLETE_FORMATION = "https://pay.kiwify.com.br/Q7d2LSL";
+const CREDIT_CARD_CHECKOUT_URL = "https://pay.kiwify.com/32cCRNt";
+const SPEI_CHECKOUT_URL = "https://checkout.sellpay.com.br/c/42bk";
 
 const certifications = [
   {
@@ -128,12 +138,8 @@ function getCheckoutWithUtm(checkoutUrl) {
 }
 
 export default function SpanishLanding() {
-  const [checkoutUrl, setCheckoutUrl] = useState(CHECKOUT_COMPLETE_FORMATION);
+  const [isPaymentModalOpen, setIsPaymentModalOpen] = useState(false);
   const [timeRemaining, setTimeRemaining] = useState("");
-
-  useEffect(() => {
-    setCheckoutUrl(getCheckoutWithUtm(CHECKOUT_COMPLETE_FORMATION));
-  }, []);
 
   useEffect(() => {
     function updateTimer() {
@@ -506,15 +512,14 @@ export default function SpanishLanding() {
                     </div>
                   </div>
 
-                  <a
+                  <button
                     className="button button-light button-full"
-                    href={checkoutUrl}
-                    target="_blank"
-                    rel="noreferrer"
+                    type="button"
+                    onClick={() => setIsPaymentModalOpen(true)}
                   >
                     QUIERO MI CERTIFICADO
                     <ArrowRight size={18} aria-hidden="true" />
-                  </a>
+                  </button>
                 </article>
               </div>
             </div>
@@ -669,6 +674,67 @@ export default function SpanishLanding() {
           </div>
         </section>
       </main>
+
+      {isPaymentModalOpen && (
+        <div
+          className="payment-modal-backdrop"
+          role="presentation"
+          onMouseDown={() => setIsPaymentModalOpen(false)}
+        >
+          <section
+            className="payment-modal"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="payment-modal-title"
+            onMouseDown={(event) => event.stopPropagation()}
+          >
+            <button
+              className="payment-modal-close"
+              type="button"
+              onClick={() => setIsPaymentModalOpen(false)}
+              aria-label="Cerrar opciones de pago"
+            >
+              <X size={20} aria-hidden="true" />
+            </button>
+
+            <span className="payment-modal-kicker">Pago seguro</span>
+            <h2 id="payment-modal-title">Elige tu método de pago</h2>
+            <p>Selecciona cómo deseas pagar tu formación.</p>
+
+            <div className="payment-options">
+              <a className="payment-option" href={CREDIT_CARD_CHECKOUT_URL}>
+                <span className="payment-option-icon" aria-hidden="true">
+                  <CreditCard size={24} strokeWidth={1.8} />
+                </span>
+                <span>
+                  <strong>Tarjeta de crédito</strong>
+                  <small>Paga de forma segura con tu tarjeta.</small>
+                </span>
+                <ArrowRight size={19} aria-hidden="true" />
+              </a>
+
+              <a className="payment-option" href={SPEI_CHECKOUT_URL}>
+                <span className="payment-option-icon" aria-hidden="true">
+                  <Landmark size={24} strokeWidth={1.8} />
+                </span>
+                <span>
+                  <strong>Pago por SPEI</strong>
+                  <small>Realiza tu pago mediante transferencia SPEI.</small>
+                </span>
+                <ArrowRight size={19} aria-hidden="true" />
+              </a>
+            </div>
+
+            <button
+              className="payment-modal-cancel"
+              type="button"
+              onClick={() => setIsPaymentModalOpen(false)}
+            >
+              Cancelar
+            </button>
+          </section>
+        </div>
+      )}
     </>
   );
 }
