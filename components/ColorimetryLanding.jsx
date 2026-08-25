@@ -189,6 +189,32 @@ export default function ColorimetryLanding() {
           </div>
         </section>
 
+        <section
+          className="bg-[#f7efe6] py-[110px] max-[820px]:py-[82px] max-[560px]:py-[62px]"
+          id="aulas-praticas"
+        >
+          <div className="color-container">
+            <div className="mx-auto max-w-[900px] text-center">
+              <h2 className="m-0 font-sans text-[clamp(34px,4.4vw,53px)] font-extrabold leading-[1.08] tracking-[-0.043em] text-[#183d42] max-[560px]:text-[clamp(28px,7.4vw,34px)] max-[560px]:leading-[1.15]">
+                além da apostila, você receberá aulas PRÁTICAS com professores te ensinando passo a passo:
+              </h2>
+            </div>
+
+            <div className="mx-auto mt-[52px] w-full max-w-[760px] overflow-hidden rounded-[20px] border border-[#d06f5061] bg-[#183d42] p-[9px] shadow-[0_22px_45px_rgba(24,61,66,0.18)] max-[560px]:mt-[38px] max-[560px]:rounded-[14px] max-[560px]:p-[6px]">
+              <video
+                className="block max-h-[720px] w-full rounded-[12px] bg-[#183d42] object-contain max-[560px]:rounded-[9px]"
+                src="https://lcbczyzedluaoxtuajoz.supabase.co/storage/v1/object/public/VIDEOS%20CORTES/videos%20aulas.mp4"
+                aria-label="Aulas práticas com professores ensinando passo a passo"
+                autoPlay
+                muted
+                loop
+                playsInline
+                preload="metadata"
+              />
+            </div>
+          </div>
+        </section>
+
         <section className="color-results-section">
           <div className="color-container">
             <div className="color-centered-heading">

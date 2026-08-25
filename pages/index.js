@@ -7,6 +7,7 @@ import ValueSection from "../components/ValueSection";
 import Certifications from "../components/Certifications";
 import StudyMaterial from "../components/StudyMaterial";
 import SocialProof from "../components/SocialProof";
+import PracticalClasses from "../components/PracticalClasses";
 
 import Offers from "../components/Offers";
 import AboutUs from "../components/AboutUs";
@@ -86,14 +87,13 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
 
-
-
       <Header />
 
       <main>
         <Hero />
         <Certifications />
         <StudyMaterial />
+        <PracticalClasses />
         <ValueSection />
         <SocialProof />
 

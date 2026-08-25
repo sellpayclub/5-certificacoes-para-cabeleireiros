@@ -29,6 +29,7 @@ Você pode publicar este projeto na Vercel, em qualquer hospedagem compatível c
 - `components/MembersArea.jsx`
 - `components/Offers.jsx`
 - `components/PlatformPreview.jsx`
+- `components/PracticalClasses.jsx`
 - `components/SocialProof.jsx`
 - `components/StudyMaterial.jsx`
 - `components/ValueSection.jsx`
