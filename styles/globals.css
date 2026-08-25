@@ -89,7 +89,7 @@ img {
   min-height: 76px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
   gap: 28px;
 }
 
@@ -252,6 +252,97 @@ img {
   height: 420px;
 }
 
+.hero-institute-brand {
+  position: absolute;
+  z-index: 2;
+  top: 25px;
+  left: 50%;
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  padding: 7px 19px 7px 8px;
+  border-top: 1px solid rgba(187, 149, 94, 0.48);
+  border-bottom: 1px solid rgba(187, 149, 94, 0.48);
+  color: var(--wine);
+  transform: translateX(-50%);
+}
+
+.hero-institute-brand .academy-logo {
+  width: 58px;
+  height: 58px;
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.hero-institute-brand .academy-logo::before {
+  position: absolute;
+  inset: 2px;
+  border: 1px solid var(--gold);
+  border-radius: 50%;
+  background: var(--paper);
+  content: "";
+}
+
+.hero-institute-brand .academy-logo::after {
+  position: absolute;
+  inset: 7px;
+  border: 1px solid rgba(81, 31, 44, 0.34);
+  border-radius: 50%;
+  content: "";
+}
+
+.hero-institute-brand .academy-logo-inner {
+  position: relative;
+  z-index: 1;
+  width: 43px;
+  height: 43px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--wine);
+  box-shadow: 0 4px 11px rgba(53, 18, 29, 0.2);
+}
+
+.hero-institute-brand .academy-logo svg {
+  top: 5px;
+  color: var(--gold-light);
+}
+
+.hero-institute-brand .academy-logo b {
+  margin-top: 13px;
+  color: var(--white);
+  font-family: var(--serif);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.hero-institute-brand .academy-brand-copy {
+  position: relative;
+  padding: 1px 0;
+  text-align: left;
+}
+
+.hero-institute-brand .academy-brand-copy strong {
+  color: var(--wine-deep);
+  font-family: var(--serif);
+  font-size: 21px;
+  font-weight: 600;
+  letter-spacing: -0.045em;
+  line-height: 1;
+}
+
+.hero-institute-brand .academy-brand-copy small {
+  margin-top: 5px;
+  color: var(--gold);
+  font-size: 9px;
+  font-weight: 900;
+  letter-spacing: 0.28em;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
 .hero-grid {
   position: relative;
   z-index: 1;
@@ -259,7 +350,7 @@ img {
   grid-template-columns: minmax(0, 1.06fr) minmax(390px, 0.94fr);
   align-items: center;
   gap: 76px;
-  padding-top: 76px;
+  padding-top: 128px;
   padding-bottom: 82px;
 }
 
@@ -2068,10 +2159,14 @@ section {
     display: none;
   }
 
+  .hero-institute-brand {
+    top: 22px;
+  }
+
   .hero-grid {
     grid-template-columns: 1fr;
     gap: 30px;
-    padding-top: 55px;
+    padding-top: 112px;
     padding-bottom: 65px;
   }
 
@@ -2289,12 +2384,59 @@ section {
     text-align: center;
   }
 
+  .hero-institute-brand {
+    top: 16px;
+  }
+
+  .hero-institute-brand {
+    gap: 10px;
+    padding: 5px 12px 5px 5px;
+  }
+
+  .hero-institute-brand .academy-logo {
+    width: 48px;
+    height: 48px;
+  }
+
+  .hero-institute-brand .academy-logo::after {
+    inset: 6px;
+  }
+
+  .hero-institute-brand .academy-logo-inner {
+    width: 35px;
+    height: 35px;
+  }
+
+  .hero-institute-brand .academy-logo svg {
+    top: 3px;
+    width: 14px;
+    height: 14px;
+  }
+
+  .hero-institute-brand .academy-logo b {
+    margin-top: 10px;
+    font-size: 9px;
+  }
+
+  .hero-institute-brand .academy-brand-copy strong {
+    font-size: 16px;
+  }
+
+  .hero-institute-brand .academy-brand-copy small {
+    margin-top: 3px;
+    font-size: 7px;
+  }
+
+  .hero-institute-brand .academy-brand-copy {
+    max-width: 168px;
+  }
+
   .hero-grid {
-    padding-top: 45px;
+    padding-top: 132px;
   }
 
   .hero h1 {
-    margin-top: 17px;
+    margin-top: 12px;
     font-size: clamp(31px, 8.5vw, 40px);
     letter-spacing: -0.04em;
     line-height: 1.1;

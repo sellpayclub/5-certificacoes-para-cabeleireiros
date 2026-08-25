@@ -14,13 +14,20 @@ export default function Hero() {
       <div className="hero-decoration hero-decoration-one" aria-hidden="true" />
       <div className="hero-decoration hero-decoration-two" aria-hidden="true" />
 
+      <div className="hero-institute-brand" aria-label="IBC Instituto Beleza">
+        <span className="academy-logo" aria-hidden="true">
+          <span className="academy-logo-inner">
+            <Award size={17} strokeWidth={1.55} />
+            <b>IBC</b>
+          </span>
+        </span>
+        <span className="academy-brand-copy">
+          <strong>IBC Instituto Beleza</strong>
+        </span>
+      </div>
+
       <div className="container hero-grid">
         <div className="hero-copy">
-          <span className="eyebrow">
-            <Award size={17} aria-hidden="true" />
-            Formação para profissionais da beleza
-          </span>
-
           <h1>
             Combo Cabeleireiro Profissional
             <br />
