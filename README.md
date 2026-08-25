@@ -31,6 +31,7 @@ Você pode publicar este projeto na Vercel, em qualquer hospedagem compatível c
 - `components/PlatformPreview.jsx`
 - `components/PracticalClasses.jsx`
 - `components/SocialProof.jsx`
+- `components/SpanishLanding.jsx`
 - `components/StudyMaterial.jsx`
 - `components/ValueSection.jsx`
 - `components/WhyAll.jsx`
@@ -40,6 +41,7 @@ Você pode publicar este projeto na Vercel, em qualquer hospedagem compatível c
 - `pages/_document.js`
 - `pages/area-de-membros.js`
 - `pages/colorimetria.js`
+- `pages/es.js`
 - `pages/gastronomia.js`
 - `pages/index.js`
 - `postcss.config.mjs`
