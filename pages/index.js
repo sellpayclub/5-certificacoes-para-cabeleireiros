@@ -11,7 +11,6 @@ import SocialProof from "../components/SocialProof";
 import Offers from "../components/Offers";
 import AboutUs from "../components/AboutUs";
 import WhyAll from "../components/WhyAll";
-import FAQ from "../components/FAQ";
 import FinalCTA from "../components/FinalCTA";
 
 export default function Home() {
@@ -101,7 +100,6 @@ export default function Home() {
         <Offers />
         <AboutUs />
         <WhyAll />
-        <FAQ />
         <FinalCTA />
       </main>
     </>

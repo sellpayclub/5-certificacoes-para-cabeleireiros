@@ -3,7 +3,6 @@ const links = [
   { label: "Certificações", href: "#certificacoes" },
   { label: "Apostilas", href: "#apostilas" },
   { label: "Opções", href: "/#planos" },
-  { label: "Perguntas frequentes", href: "#perguntas-frequentes" },
 ];
 
 export default function Header() {
