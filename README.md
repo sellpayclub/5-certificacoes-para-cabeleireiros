@@ -20,6 +20,7 @@ Você pode publicar este projeto na Vercel, em qualquer hospedagem compatível c
 - `.gitignore`
 - `components/AboutUs.jsx`
 - `components/Certifications.jsx`
+- `components/ColorimetryLanding.jsx`
 - `components/FAQ.jsx`
 - `components/FinalCTA.jsx`
 - `components/GastronomyLanding.jsx`
@@ -37,6 +38,7 @@ Você pode publicar este projeto na Vercel, em qualquer hospedagem compatível c
 - `pages/_app.js`
 - `pages/_document.js`
 - `pages/area-de-membros.js`
+- `pages/colorimetria.js`
 - `pages/gastronomia.js`
 - `pages/index.js`
 - `postcss.config.mjs`
