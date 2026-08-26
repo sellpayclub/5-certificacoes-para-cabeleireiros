@@ -3,11 +3,12 @@ import Head from "next/head";
 
 import Header from "../components/Header";
 import Hero from "../components/Hero";
-import ValueSection from "../components/ValueSection";
+
 import Certifications from "../components/Certifications";
 import StudyMaterial from "../components/StudyMaterial";
 import SocialProof from "../components/SocialProof";
 import PracticalClasses from "../components/PracticalClasses";
+import ResultsCarousel from "../components/ResultsCarousel";
 
 import Offers from "../components/Offers";
 import AboutUs from "../components/AboutUs";
@@ -94,7 +95,8 @@ export default function Home() {
         <Certifications />
         <StudyMaterial />
         <PracticalClasses />
-        <ValueSection />
+        <ResultsCarousel />
+
         <SocialProof />
 
         <Offers />

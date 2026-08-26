@@ -30,6 +30,7 @@ Você pode publicar este projeto na Vercel, em qualquer hospedagem compatível c
 - `components/Offers.jsx`
 - `components/PlatformPreview.jsx`
 - `components/PracticalClasses.jsx`
+- `components/ResultsCarousel.jsx`
 - `components/SocialProof.jsx`
 - `components/SpanishLanding.jsx`
 - `components/StudyMaterial.jsx`
