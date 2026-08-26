@@ -54,7 +54,11 @@ export default function Home() {
       document.head.appendChild(googleTag);
     }
 
-    return;
+    const trackingIsDisabled = true;
+
+    if (trackingIsDisabled) {
+      return;
+    }
 
     const scripts = [
       {
