@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { ArrowRight, Award, Check, Sparkles } from "lucide-react";
 
 const CHECKOUT_COMPLETE_FORMATION =
-  "https://pay.kiwify.com.br/Q7d2LSL";
+  "https://pay.kiwify.com.br/30UKU4V";
 
 const completeBenefits = [
   "Alisamento Profissional",
@@ -118,10 +118,10 @@ export default function Offers() {
             <BenefitList items={completeBenefits} />
 
               <div className="featured-price">
-                                  <span>De R$249,50 por R$47,00!</span>
+                                  <span>De R$249,50 por R$19,90!</span>
                 <div className="featured-price-value">
                   <small>FORMAÇÃO COMPLETA</small>
-                  <strong>R$ 47,00</strong>
+                  <strong>R$ 19,90</strong>
                 </div>
               </div>
 

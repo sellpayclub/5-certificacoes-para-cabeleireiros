@@ -3,6 +3,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 :root {
   --wine: #521f2c;
   --wine-deep: #35121d;
@@ -19,10 +20,9 @@
   --line: #e5d8cf;
   --white: #ffffff;
   --shadow: 0 22px 60px rgba(66, 26, 35, 0.12);
-  --serif: Georgia, "Times New Roman", serif;
-  --heading: "Montserrat", Arial, sans-serif;
-  --sans: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", sans-serif;
+  --serif: "Roboto", Arial, sans-serif;
+  --heading: "Roboto", Arial, sans-serif;
+  --sans: "Roboto", Arial, sans-serif;
 }
 
 * {
@@ -378,10 +378,85 @@ img {
   line-height: 0.99;
 }
 
+.hero-title-portuguese {
+  max-width: 700px !important;
+  margin-bottom: 24px !important;
+  font-size: clamp(39px, 4.4vw, 60px) !important;
+  font-weight: 800 !important;
+  letter-spacing: -0.052em !important;
+  line-height: 1.02 !important;
+}
+
+.hero-title-portuguese > span {
+  display: block;
+}
+
+.hero-title-intro {
+  margin-bottom: 12px;
+  color: var(--wine-soft);
+  font-size: 0.46em;
+  font-weight: 900;
+  letter-spacing: 0.015em;
+  line-height: 1.18;
+  text-transform: uppercase;
+}
+
+.hero-title-subject {
+  max-width: 660px;
+  color: var(--wine-deep);
+}
+
 .hero-title-emphasis {
-  display: inline-block;
-  font-size: 1.28em;
-  line-height: 0.88;
+  width: fit-content;
+  margin-top: 22px;
+  padding: 11px 16px;
+  border: 1px solid var(--gold);
+  border-radius: 999px;
+  background: var(--wine);
+  box-shadow: 0 12px 24px rgba(81, 31, 44, 0.17);
+  color: var(--gold-light);
+  font-size: 0.52em;
+  font-weight: 900;
+  letter-spacing: -0.025em;
+  line-height: 1;
+}
+
+.hero-number {
+  font-family: var(--heading);
+  font-size: 1.04em;
+  font-weight: 900;
+  letter-spacing: -0.035em;
+}
+
+.spanish-hero-title {
+  max-width: 650px;
+  font-size: clamp(48px, 5.5vw, 72px) !important;
+  letter-spacing: -0.055em !important;
+  line-height: 0.94 !important;
+}
+
+.spanish-hero-title > span {
+  display: block;
+}
+
+.spanish-hero-title strong {
+  color: var(--wine-soft);
+  font-weight: 900;
+}
+
+.spanish-hero-title .spanish-hero-highlight {
+  width: fit-content;
+  margin-top: 17px;
+  padding: 10px 17px 11px;
+  border: 1px solid var(--gold);
+  border-radius: 999px;
+  background: var(--wine);
+  box-shadow: 0 12px 24px rgba(81, 31, 44, 0.17);
+  color: var(--gold-light);
+  font-size: 0.53em;
+  font-weight: 900;
+  letter-spacing: -0.035em;
+  line-height: 1;
 }
 
 .hero-lead {
@@ -401,6 +476,10 @@ img {
 
 .hero-lead strong {
   color: var(--wine);
+}
+
+.hero-mobile-product-image {
+  display: none;
 }
 
 .hero-benefits {
@@ -2192,7 +2271,24 @@ section {
   }
 
   .hero-visual {
-    margin-top: 5px;
+    display: none;
+  }
+
+  .hero-mobile-product-image {
+    display: block;
+    max-width: 470px;
+    margin: 26px auto 0;
+    padding: 8px;
+    border: 1px solid rgba(187, 149, 94, 0.28);
+    border-radius: 20px;
+    background: radial-gradient(circle at top left, #fffdfa 0%, #f1ded5 100%);
+    box-shadow: 0 22px 52px rgba(66, 26, 35, 0.18);
+  }
+
+  .hero-mobile-product-image img {
+    width: 100%;
+    display: block;
+    border-radius: 14px;
   }
 
   .hero-mockups-image {
@@ -2443,6 +2539,37 @@ section {
     text-wrap: balance;
   }
 
+  .spanish-hero-title {
+    max-width: 350px;
+    font-size: clamp(38px, 10.5vw, 48px) !important;
+    line-height: 0.98 !important;
+  }
+
+  .spanish-hero-title .spanish-hero-highlight {
+    margin: 15px auto 0;
+    padding: 9px 15px 10px;
+    font-size: 0.51em;
+  }
+
+  .hero-title-portuguese {
+    max-width: 370px !important;
+    font-size: clamp(31px, 8.7vw, 40px) !important;
+    line-height: 1.08 !important;
+  }
+
+  .hero-title-intro {
+    margin-bottom: 10px;
+    font-size: 0.45em;
+    line-height: 1.2;
+  }
+
+  .hero-title-emphasis {
+    margin: 17px auto 0;
+    padding: 10px 14px;
+    font-size: 0.5em;
+    letter-spacing: -0.02em;
+  }
+
   .hero-lead {
     padding: 16px;
     border-left-width: 4px;
@@ -2505,6 +2632,7 @@ section {
   }
 
   .hero-mockups-image,
+  .hero-mobile-product-image,
   .salon-image,
   .books-image {
     width: 100%;

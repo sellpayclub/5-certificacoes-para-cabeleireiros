@@ -204,10 +204,10 @@ export default function SpanishLanding() {
 
           <div className="container hero-grid">
             <div className="hero-copy">
-              <h1>
-                Certificación profesional para peluqueros
-                <br />
-                <span className="hero-title-emphasis">5 en 1.</span>
+              <h1 className="spanish-hero-title">
+                <span>Certificación <strong>profesional</strong></span>
+                <span>para peluqueros</span>
+                <span className="spanish-hero-highlight">5 en 1.</span>
               </h1>
 
               <p className="hero-lead">

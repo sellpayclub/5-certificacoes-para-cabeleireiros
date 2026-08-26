@@ -42,6 +42,24 @@ export default function App({ Component, pageProps }) {
   const router = useRouter();
 
   useEffect(() => {
+    const isEmbeddedPreview = (() => {
+      try {
+        return window.top !== window.self;
+      } catch {
+        return true;
+      }
+    })();
+
+    const hostname = window.location.hostname.toLowerCase();
+    const isCodaiPreview =
+      hostname.includes("preview") ||
+      hostname.includes("codai") ||
+      document.referrer.toLowerCase().includes("codai");
+
+    if (isEmbeddedPreview || isCodaiPreview) {
+      return;
+    }
+
     [...permanentPixels, ...sharedTrackingScripts].forEach(({ id, content }) => {
       if (document.getElementById(id)) {
         return;

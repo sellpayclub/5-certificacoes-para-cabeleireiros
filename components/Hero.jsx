@@ -28,32 +28,33 @@ export default function Hero() {
 
       <div className="container hero-grid">
         <div className="hero-copy">
-          <h1>
-            Combo Cabeleireiro Profissional
-            <br />
-            <span className="hero-title-emphasis">5 em 1.</span>
+          <h1 className="hero-title-portuguese">
+            <span className="hero-title-subject">
+              Domine as <strong className="hero-number">5</strong> Principais Áreas de Cabeleireiro por Apenas{" "}
+              <strong className="hero-number">R$ 19,90</strong>
+            </span>
+            <span className="hero-title-emphasis">
+              Guias Completo do ZERO ao Avançado!
+            </span>
           </h1>
 
           <p className="hero-lead">
-            Receba 5 apostilas completas + 5 certificados no seu nome por Apenas R$ 10,00 CADA.
+            Receba <strong className="hero-number">5</strong> apostilas completas +{" "}
+            <strong className="hero-number">5</strong> certificados no seu nome por Apenas{" "}
+            <strong className="hero-number">R$ 3,98 CADA.</strong>
           </p>
 
-          <div className="hero-benefits">
-            <strong>Você recebe:</strong>
-            <ul>
-              {benefits.map((benefit) => (
-                <li key={benefit}>
-                  <span className="check-icon" aria-hidden="true">
-                    <Check size={15} strokeWidth={2.5} />
-                  </span>
-                  {benefit}
-                </li>
-              ))}
-            </ul>
+          <div className="hero-mobile-product-image">
+            <img
+              src="https://osnxfompwlwlfkuvncgs.supabase.co/storage/v1/object/public/project-assets/3464e6e8-17aa-481a-a30b-c7fdbac62d82/uploads/cb3fde29-f925-4351-b9cd-9939ef56b8f5.jpg"
+              alt="Combo com cinco apostilas profissionais para cabeleireiros"
+              referrerPolicy="no-referrer"
+            />
           </div>
 
+
           <a className="button button-primary button-large" href="/#planos">
-            DE R$ 249,50 POR R$ 47,00 HOJE!
+            DE R$ 249,50 POR R$ 19,90 HOJE!
             <ArrowRight size={19} aria-hidden="true" />
           </a>
         </div>
