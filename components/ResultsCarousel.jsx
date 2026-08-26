@@ -109,7 +109,7 @@ export default function ResultsCarousel() {
                     muted
                     loop
                     playsInline
-                    preload="metadata"
+                    preload="auto"
                   />
                 ) : (
                   <img

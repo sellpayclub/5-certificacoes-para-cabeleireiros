@@ -24,7 +24,7 @@ export default function PracticalClasses() {
             muted
             loop
             playsInline
-            preload="metadata"
+            preload="auto"
           />
         </div>
       </div>
