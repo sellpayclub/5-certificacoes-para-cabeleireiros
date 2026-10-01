@@ -61,7 +61,7 @@ export default function SocialProof() {
                     className="client-photo"
                     src={slide.src}
                     alt={index < slides.length ? slide.alt : ""}
-                    loading="lazy"
+                    loading="eager"
                     decoding="async"
                     referrerPolicy="no-referrer"
                   />

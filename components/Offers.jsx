@@ -118,10 +118,10 @@ export default function Offers() {
             <BenefitList items={completeBenefits} />
 
               <div className="featured-price">
-                                  <span>De R$249,50 por R$19,90!</span>
+                                  <span>De R$249,50 por R$49,90!</span>
                 <div className="featured-price-value">
                   <small>FORMAÇÃO COMPLETA</small>
-                  <strong>R$ 19,90</strong>
+                  <strong>R$ 49,90</strong>
                 </div>
               </div>
 

@@ -7,6 +7,7 @@ const resultsMedia = [
   {
     type: "video",
     src: "https://lcbczyzedluaoxtuajoz.supabase.co/storage/v1/object/public/VIDEOS%20CORTES/Pinterest%20(1).mp4",
+    poster: "https://osnxfompwlwlfkuvncgs.supabase.co/storage/v1/object/public/project-assets/3464e6e8-17aa-481a-a30b-c7fdbac62d82/uploads/bc948b41-002d-43bc-bab2-10238641f109.png",
     alt: "Vídeo de resultado de corte e cabelo",
   },
   {
@@ -17,6 +18,7 @@ const resultsMedia = [
   {
     type: "video",
     src: "https://lcbczyzedluaoxtuajoz.supabase.co/storage/v1/object/public/VIDEOS%20CORTES/Pinterest%20(2).mp4",
+    poster: "https://osnxfompwlwlfkuvncgs.supabase.co/storage/v1/object/public/project-assets/3464e6e8-17aa-481a-a30b-c7fdbac62d82/uploads/f26cbf80-0516-415b-a239-d7026b887521.jpg",
     alt: "Vídeo de resultado de corte e cabelo",
   },
   {
@@ -27,6 +29,7 @@ const resultsMedia = [
   {
     type: "video",
     src: "https://lcbczyzedluaoxtuajoz.supabase.co/storage/v1/object/public/VIDEOS%20CORTES/Pinterest%20(3).mp4",
+    poster: "https://osnxfompwlwlfkuvncgs.supabase.co/storage/v1/object/public/project-assets/3464e6e8-17aa-481a-a30b-c7fdbac62d82/uploads/9edd94a4-2e04-40f2-815d-4d7017f36714.jpg",
     alt: "Vídeo de resultado de corte e cabelo",
   },
   {
@@ -37,6 +40,7 @@ const resultsMedia = [
   {
     type: "video",
     src: "https://lcbczyzedluaoxtuajoz.supabase.co/storage/v1/object/public/VIDEOS%20CORTES/Pinterest.mp4",
+    poster: "https://osnxfompwlwlfkuvncgs.supabase.co/storage/v1/object/public/project-assets/3464e6e8-17aa-481a-a30b-c7fdbac62d82/uploads/d7167ec1-a38b-4a44-be59-f5da650a2ac1.jpg",
     alt: "Vídeo de resultado de corte e cabelo",
   },
   {
@@ -110,12 +114,14 @@ export default function ResultsCarousel() {
                     loop
                     playsInline
                     preload="auto"
+                    poster={media.poster}
+                    referrerPolicy="no-referrer"
                   />
                 ) : (
                   <img
                     src={media.src}
                     alt={index < resultsMedia.length ? media.alt : ""}
-                    loading="lazy"
+                    loading="eager"
                     decoding="async"
                     referrerPolicy="no-referrer"
                   />
