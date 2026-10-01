@@ -31,7 +31,7 @@ export default function Hero() {
           <h1 className="hero-title-portuguese">
             <span className="hero-title-subject">
               Domine as <strong className="hero-number">5</strong> Principais Áreas de Cabeleireiro por Apenas{" "}
-              <strong className="hero-number">R$ 49,90</strong>
+              <strong className="hero-number">R$ 10 CADA</strong>
             </span>
             <span className="hero-title-emphasis">
               Guias Completo do ZERO ao Avançado!
@@ -40,8 +40,7 @@ export default function Hero() {
 
           <p className="hero-lead">
             Receba <strong className="hero-number">5</strong> apostilas completas +{" "}
-            <strong className="hero-number">5</strong> certificados no seu nome por Apenas{" "}
-            <strong className="hero-number">R$ 9,98 CADA.</strong>
+            <strong className="hero-number">5</strong> certificados autenticados e validos no seu nome
           </p>
 
           <div className="hero-mobile-product-image">

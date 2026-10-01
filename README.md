@@ -46,6 +46,7 @@ Você pode publicar este projeto na Vercel, em qualquer hospedagem compatível c
 - `pages/gastronomia.js`
 - `pages/index.js`
 - `postcss.config.mjs`
+- `public/codigo-landing.html`
 - `styles/globals.css`
 - `tailwind.config.js`
 
